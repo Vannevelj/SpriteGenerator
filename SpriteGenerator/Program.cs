@@ -87,7 +87,7 @@ namespace SpriteGenerator
                     var currentStartTimeString = currentStartTimestamp.ToString(@"hh\:mm\:ss\.fff");
                     var currentEndTimeString = currentEndTimestamp.ToString(@"hh\:mm\:ss\.fff");
                     thumbnailTrack.AppendLine($"{currentStartTimeString} --> {currentEndTimeString}");
-                    thumbnailTrack.AppendLine($"{spriteName}#xywh={currentX},{currentY},{firstImage.Width},{firstImage.Height}");
+                    thumbnailTrack.AppendLine($"https://hudl-skunkworks.s3.amazonaws.com/hover-preview/{spriteName}#xywh={currentX},{currentY},{firstImage.Width},{firstImage.Height}");
                     thumbnailTrack.AppendLine();
 
                     imagesInBitmap++;
